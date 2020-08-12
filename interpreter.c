@@ -83,8 +83,8 @@ int main(int argc, char** argv) {
 
    for (size_t i = 0; i < ins_size; i++) {
       switch(instructs[i].type) {
-         case '+': *ptr += 1; break;
-         case '-': *ptr -= 1; break;
+         case '+': *ptr++; break;
+         case '-': *ptr++; break;
          case '>': ptr++; break;
          case '<': ptr--; break;
          case '.': putchar(*ptr); break;
